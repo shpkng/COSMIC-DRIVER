@@ -1,0 +1,47 @@
+/*
+ * File: 简单的逻辑说明
+ * Project: Script
+ * File Created: Friday, 1st June 2018 3:38:27 am
+ * Author: shpkng (shpkng@gmail.com)
+ * -----
+ * Last Modified: Friday, 1st June 2018 4:10:28 am
+ * Modified By: shpkng (shpkng@gmail.com>)
+ * -----
+ * loving the lovely sunshine in autumn.♥
+ */
+
+ENGLISH VERSION FOR COOPER YOO
+
+
+简单说明一下逻辑的问题。
+
+音符相关：
+    1.我设计了一个FuncRange物体，作为碰撞盒。 整个音符的生命周期是这样的：
+        首先，音符由Spawner根据App.conf中的JSon数据依次生成，初始位置为SpawnPlace；
+        然后音符向玩家移动，当音符接触到FuncRange时，开始生效（大概就是放个动画强调一下，没有动画就更好了）；
+        正常流程，玩家击打音符，如果音符被成对打中，则直接结算分数，由GameControl脚本控制；
+        若音符已经离开FuncRange也未能被击中，则播放一个Miss效果（Miss效果当然没有做）
+
+生成器相关：
+    1.生成器脚本（Spawner)被绑定在GameControl物体上
+    2.生成器读取一个.conf文件，.conf文件格式如下：
+
+        10000
+        {"prePath":"0","opTimeNext":"2","velocity":"2","deltaY":"2","rot":"0"}
+        {"prePath":"0","opTimeNext":"3","velocity":"2","deltaY":"3","rot":"45"}
+        {"prePath":"0","opTimeNext":"4","velocity":"2","deltaY":"4","rot":"90"}
+        {"prePath":"0","opTimeNext":"5","velocity":"2","deltaY":"5","rot":"180"}
+        ……
+
+        其中，“10000”是行数的1000倍，尾部填充的三个0是特殊处理。{}中的语句保存了一个JSon对象，其中prePath为音符预制体在Spawner.GameObject[]中的序号；
+        opTimeNext保存的是下一个音符的出现时间，特别注意，是下一个；
+        velocity保存的是音符朝向玩家的移动速度；
+        deltaY保存的是相对于SpawnPlace的Y轴位移；
+        rot保存的是Z轴欧拉角旋转；
+    3.Inspector里为app.conf留了一个位置，相对的根目录为/Asset
+
+判定相关：
+    1.Controller上有Collider
+    2.音符上的红蓝圆柱有Trigger
+    3.FuncRange上有Trigger
+    4.音符上的蓝圆柱Tag为Obstacle
