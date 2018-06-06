@@ -110,14 +110,14 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4429062883053168}
-  - component: {fileID: 114630701116879264}
+  - component: {fileID: 114305775074607106}
   m_Layer: 0
   m_Name: long F
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1840042768821592
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,6 +536,20 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300006, guid: ecaf92d9bb022b044ae37478c0ff1456, type: 3}
+--- !u!114 &114305775074607106
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1753773305163040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8889583ac83666f49b39e0476a22ad01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "\u9700\u8981\u89E6\u53D1\u7684\u6570\u91CF_Needed": 2
+  red: {fileID: 114467857972612994}
+  blue: {fileID: 114503351820783812}
 --- !u!114 &114467857972612994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -547,7 +561,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  n: {fileID: 114630701116879264}
+  obstacle: {fileID: 114305775074607106}
+  "_\u989C\u8272_Color": 0
 --- !u!114 &114503351820783812
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -559,17 +574,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  n: {fileID: 114630701116879264}
---- !u!114 &114630701116879264
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1753773305163040}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c08f4bbaff71fa4f80d9d752626fdbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  red: {fileID: 114467857972612994}
-  blue: {fileID: 114503351820783812}
+  obstacle: {fileID: 114305775074607106}
+  "_\u989C\u8272_Color": 1

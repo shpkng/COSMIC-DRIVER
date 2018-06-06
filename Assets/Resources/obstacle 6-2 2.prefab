@@ -56,14 +56,14 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4070747115855902}
-  - component: {fileID: 114818935653407024}
+  - component: {fileID: 114420088299646026}
   m_Layer: 0
   m_Name: obstacle 6-2 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1343083610918222
 GameObject:
   m_ObjectHideFlags: 0
@@ -171,7 +171,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1195150993757318}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: -0, z: 0.9238796, w: -0.38268325}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -184,7 +184,7 @@ Transform:
   - {fileID: 4809458062285074}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 225}
 --- !u!4 &4209737084669090
 Transform:
   m_ObjectHideFlags: 1
@@ -619,7 +619,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  n: {fileID: 114818935653407024}
+  obstacle: {fileID: 114420088299646026}
+  "_\u989C\u8272_Color": 0
 --- !u!114 &114068283653149436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -631,8 +632,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  n: {fileID: 114818935653407024}
---- !u!114 &114818935653407024
+  obstacle: {fileID: 114420088299646026}
+  "_\u989C\u8272_Color": 1
+--- !u!114 &114420088299646026
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -640,8 +642,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1195150993757318}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c08f4bbaff71fa4f80d9d752626fdbc, type: 3}
+  m_Script: {fileID: 11500000, guid: 8889583ac83666f49b39e0476a22ad01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "\u9700\u8981\u89E6\u53D1\u7684\u6570\u91CF_Needed": 2
   red: {fileID: 114054422760532562}
   blue: {fileID: 114068283653149436}

@@ -36,14 +36,14 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4116600329357510}
-  - component: {fileID: 114250948817344438}
+  - component: {fileID: 114023939604975424}
   m_Layer: 0
   m_Name: long I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1496134865393098
 GameObject:
   m_ObjectHideFlags: 0
@@ -824,7 +824,7 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: f1463ace014cf5c4b804a167012d8d47, type: 3}
---- !u!114 &114250948817344438
+--- !u!114 &114023939604975424
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -832,9 +832,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1442139759589214}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c08f4bbaff71fa4f80d9d752626fdbc, type: 3}
+  m_Script: {fileID: 11500000, guid: 8889583ac83666f49b39e0476a22ad01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "\u9700\u8981\u89E6\u53D1\u7684\u6570\u91CF_Needed": 2
   red: {fileID: 114696663902092722}
   blue: {fileID: 114703516205060708}
 --- !u!114 &114696663902092722
@@ -848,7 +849,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  n: {fileID: 114250948817344438}
+  obstacle: {fileID: 114023939604975424}
+  "_\u989C\u8272_Color": 0
 --- !u!114 &114703516205060708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -860,4 +862,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  n: {fileID: 114250948817344438}
+  obstacle: {fileID: 114023939604975424}
+  "_\u989C\u8272_Color": 1

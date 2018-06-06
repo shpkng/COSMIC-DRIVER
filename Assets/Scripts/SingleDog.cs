@@ -1,10 +1,10 @@
 ﻿/*
  * File: SingleDog.cs
- * Project: Script
- * File Created: Friday, 1st June 2018 2:19:04 am
+ * Project: Scripts
+ * File Created: Thursday, 7th June 2018 4:32:54 am
  * Author: shpkng (shpkng@gmail.com)
  * -----
- * Last Modified: Wednesday, 6th June 2018 4:00:53 am
+ * Last Modified: Thursday, 7th June 2018 5:05:57 am
  * Modified By: shpkng (shpkng@gmail.com>)
  * -----
  * loving the lovely sunshine in autumn.♥
@@ -26,15 +26,24 @@ public class SingleDog : MonoBehaviour
     };
 
     public Obstacle obstacle;
-    
+
     [SerializeField] 颜色_Color _颜色_Color;
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Controller")
+        if (other.tag == "Controller" && other.GetComponent<CColor>().color == _颜色_Color)
         {
-            //播放消失动画/特效
             obstacle.SumPoints(0);
         }
+
+        // if(other.tag == "ControllerMid")
+        // {
+
+        // }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+
     }
 }
