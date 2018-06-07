@@ -18,7 +18,6 @@ using UnityEngine;
 
 public class InOut : MonoBehaviour
 {
-
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Obstacle")

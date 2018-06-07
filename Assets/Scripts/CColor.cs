@@ -16,9 +16,5 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CColor : MonoBehaviour {
-
-
-
 	public SingleDog.颜色_Color color;
-	
 }

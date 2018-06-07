@@ -18,9 +18,7 @@ using UnityEngine;
 
 
 [RequireComponent(typeof(HighlightingSystem.Highlighter))]
-public class autoHL : MonoBehaviour {
-	[SerializeField] Color 高光颜色_Color;
-	void Start () {
-		GetComponent<HighlightingSystem.Highlighter>().ConstantOn();
+public class AutoHL_Red : MonoBehaviour {	void Start () {
+		GetComponent<HighlightingSystem.Highlighter>().ConstantOn(Color.red);
 	}
 }

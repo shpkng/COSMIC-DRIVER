@@ -128,6 +128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4918354161334220}
   - component: {fileID: 114665632298971300}
+  - component: {fileID: 114696950782784516}
   m_Layer: 0
   m_Name: long B
   m_TagString: Untagged
@@ -547,7 +548,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  n: {fileID: 114665632298971300}
+  obstacle: {fileID: 114696950782784516}
+  perfect: 100
+  good: 80
+  ok: 60
+  withMid: 0
+  _in: 0
+  "_\u989C\u8272_Color": 1
 --- !u!114 &114665632298971300
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -561,6 +568,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   red: {fileID: 114944224225373332}
   blue: {fileID: 114432683896562936}
+--- !u!114 &114696950782784516
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1998390388138286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8889583ac83666f49b39e0476a22ad01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "\u9700\u8981\u89E6\u53D1\u7684\u6570\u91CF_Needed": 2
+  red: {fileID: 114944224225373332}
+  blue: {fileID: 114432683896562936}
 --- !u!114 &114944224225373332
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -572,4 +593,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  n: {fileID: 114665632298971300}
+  obstacle: {fileID: 114696950782784516}
+  perfect: 100
+  good: 80
+  ok: 60
+  withMid: 0
+  _in: 0
+  "_\u989C\u8272_Color": 0

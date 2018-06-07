@@ -27,7 +27,7 @@ public class LongDog : SingleDog
     {
         if (isIn)
         {
-            obstacle.SumPoints(ppf);
+            //obstacle.SumPoints(ppf,0,transform);
         }
     }
 }

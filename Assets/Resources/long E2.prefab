@@ -77,6 +77,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4748635765109882}
   - component: {fileID: 114993238111970836}
+  - component: {fileID: 114339481899954714}
   m_Layer: 0
   m_Name: long E2
   m_TagString: Untagged
@@ -651,7 +652,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  n: {fileID: 114993238111970836}
+  obstacle: {fileID: 114339481899954714}
+  perfect: 100
+  good: 80
+  ok: 60
+  withMid: 0
+  _in: 0
+  "_\u989C\u8272_Color": 1
+--- !u!114 &114339481899954714
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1470117044502244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8889583ac83666f49b39e0476a22ad01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "\u9700\u8981\u89E6\u53D1\u7684\u6570\u91CF_Needed": 2
+  isLong: 0
+  red: {fileID: 114381735334616266}
+  blue: {fileID: 114335892560710408}
 --- !u!114 &114381735334616266
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -663,7 +685,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  n: {fileID: 114993238111970836}
+  obstacle: {fileID: 114339481899954714}
+  perfect: 100
+  good: 80
+  ok: 60
+  withMid: 0
+  _in: 0
+  "_\u989C\u8272_Color": 0
 --- !u!114 &114575864902920202
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -675,7 +703,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  n: {fileID: 0}
+  obstacle: {fileID: 0}
+  perfect: 100
+  good: 80
+  ok: 60
+  withMid: 0
+  _in: 0
+  "_\u989C\u8272_Color": 0
 --- !u!114 &114993238111970836
 MonoBehaviour:
   m_ObjectHideFlags: 1

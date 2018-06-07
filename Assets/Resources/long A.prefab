@@ -74,6 +74,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4217013400139358}
   - component: {fileID: 114574544008963284}
+  - component: {fileID: 114474564566746430}
   m_Layer: 0
   m_Name: long A
   m_TagString: Untagged
@@ -547,7 +548,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  n: {fileID: 114574544008963284}
+  obstacle: {fileID: 114474564566746430}
+  perfect: 100
+  good: 80
+  ok: 60
+  withMid: 0
+  _in: 0
+  "_\u989C\u8272_Color": 1
 --- !u!114 &114380820443600632
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -559,7 +566,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  n: {fileID: 114574544008963284}
+  obstacle: {fileID: 114474564566746430}
+  perfect: 100
+  good: 80
+  ok: 60
+  withMid: 0
+  _in: 0
+  "_\u989C\u8272_Color": 0
+--- !u!114 &114474564566746430
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1493157380099024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8889583ac83666f49b39e0476a22ad01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "\u9700\u8981\u89E6\u53D1\u7684\u6570\u91CF_Needed": 2
+  isLong: 0
+  red: {fileID: 114380820443600632}
+  blue: {fileID: 114022505837374856}
 --- !u!114 &114574544008963284
 MonoBehaviour:
   m_ObjectHideFlags: 1

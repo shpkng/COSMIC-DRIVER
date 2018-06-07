@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Controller
+  - ControllerMid
   layers:
   - Default
   - TransparentFX

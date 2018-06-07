@@ -74,9 +74,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4613783535586334}
   - component: {fileID: 95379639886464794}
-  - component: {fileID: 114056480365990922}
   - component: {fileID: 114090076089515694}
   - component: {fileID: 114647417345480238}
+  - component: {fileID: 114262857652281112}
   m_Layer: 0
   m_Name: N1
   m_TagString: Untagged
@@ -628,19 +628,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114056480365990922
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1439015816111164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c08f4bbaff71fa4f80d9d752626fdbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  red: {fileID: 114383742675174388}
-  blue: {fileID: 114905674345268818}
 --- !u!114 &114090076089515694
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -652,6 +639,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67d4de287b46eb34e83a61e4f9115070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114262857652281112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1439015816111164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8889583ac83666f49b39e0476a22ad01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "\u9700\u8981\u89E6\u53D1\u7684\u6570\u91CF_Needed": 2
+  red: {fileID: 114383742675174388}
+  blue: {fileID: 114905674345268818}
 --- !u!114 &114383742675174388
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -663,7 +664,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  n: {fileID: 114056480365990922}
+  obstacle: {fileID: 114262857652281112}
+  perfect: 100
+  good: 80
+  ok: 60
+  withMid: 0
+  _in: 0
+  "_\u989C\u8272_Color": 0
 --- !u!114 &114647417345480238
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -675,6 +682,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 309441d827a2fe24e953c987a584893e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "\u9AD8\u5149\u989C\u8272_Color": {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &114905674345268818
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -686,4 +694,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  n: {fileID: 114056480365990922}
+  obstacle: {fileID: 114262857652281112}
+  perfect: 100
+  good: 80
+  ok: 60
+  withMid: 0
+  _in: 0
+  "_\u989C\u8272_Color": 1
