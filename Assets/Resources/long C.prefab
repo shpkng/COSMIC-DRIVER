@@ -552,8 +552,8 @@ MonoBehaviour:
   perfect: 100
   good: 80
   ok: 60
-  withMid: 0
-  _in: 0
+  divisor: 50
+  isLong: 1
   "_\u989C\u8272_Color": 1
 --- !u!114 &114390528382706546
 MonoBehaviour:
@@ -567,7 +567,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "\u9700\u8981\u89E6\u53D1\u7684\u6570\u91CF_Needed": 2
-  isLong: 0
+  isLong: 1
   red: {fileID: 114422381209352868}
   blue: {fileID: 114286452543370064}
 --- !u!114 &114422381209352868
@@ -585,8 +585,8 @@ MonoBehaviour:
   perfect: 100
   good: 80
   ok: 60
-  withMid: 0
-  _in: 0
+  divisor: 50
+  isLong: 1
   "_\u989C\u8272_Color": 0
 --- !u!114 &114471105644838066
 MonoBehaviour:

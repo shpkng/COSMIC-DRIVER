@@ -63,7 +63,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1343083610918222
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,6 +620,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacle: {fileID: 114420088299646026}
+  perfect: 100
+  good: 80
+  ok: 60
+  withMid: 0
+  _in: 0
   "_\u989C\u8272_Color": 0
 --- !u!114 &114068283653149436
 MonoBehaviour:
@@ -633,6 +638,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacle: {fileID: 114420088299646026}
+  perfect: 100
+  good: 80
+  ok: 60
+  withMid: 0
+  _in: 0
   "_\u989C\u8272_Color": 1
 --- !u!114 &114420088299646026
 MonoBehaviour:
@@ -646,5 +656,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "\u9700\u8981\u89E6\u53D1\u7684\u6570\u91CF_Needed": 2
+  isLong: 0
   red: {fileID: 114054422760532562}
   blue: {fileID: 114068283653149436}

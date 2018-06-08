@@ -57,13 +57,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4712219911849192}
   - component: {fileID: 114901332406305520}
+  - component: {fileID: 114521039440736502}
   m_Layer: 0
   m_Name: long A 6-6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1115524269283182
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,6 +537,19 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300004, guid: 058af5758ffeded4e9aded037d965de8, type: 3}
+--- !u!114 &114521039440736502
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1106140635074384}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c08f4bbaff71fa4f80d9d752626fdbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  red: {fileID: 114556610465731900}
+  blue: {fileID: 114922066836863790}
 --- !u!114 &114556610465731900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -548,6 +562,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacle: {fileID: 114901332406305520}
+  perfect: 100
+  good: 80
+  ok: 60
+  divisor: 50
+  isLong: 1
   "_\u989C\u8272_Color": 0
 --- !u!114 &114901332406305520
 MonoBehaviour:
@@ -561,6 +580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "\u9700\u8981\u89E6\u53D1\u7684\u6570\u91CF_Needed": 2
+  isLong: 1
   red: {fileID: 114556610465731900}
   blue: {fileID: 114922066836863790}
 --- !u!114 &114922066836863790
@@ -575,4 +595,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacle: {fileID: 114901332406305520}
+  perfect: 100
+  good: 80
+  ok: 60
+  divisor: 50
+  isLong: 1
   "_\u989C\u8272_Color": 1
