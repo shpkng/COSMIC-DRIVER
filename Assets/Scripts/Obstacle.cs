@@ -46,45 +46,11 @@ public class Obstacle : MonoBehaviour
         g = GameObject.Find("GameControl").GetComponent<GameControl>();
     }
 
-    /// <summary>
-    /// to assign values of these variables
-    /// </summary>
-    /// <param name="t">When the next obstacle will spawn</param>
-    /// <param name="v">The velocity of this obstacle( it's only a float assigned to z-axis)</param>
-    /// <param name="rot">Rotation of this one in EULER ANGLES</param>
-    public void SetProperty(float t, float v, int rot)
-    {
-        opTimeNext = t;
-        velocity = -v;
-        transform.eulerAngles += new Vector3(0, 0, rot);
-    }
-
     // Update is called once per frame
     void Update()
     {
         transform.Translate(0, 0, velocity * Time.deltaTime);
     }
-
-
-    #region SumPoints - Sync
-    /// <summary>
-    /// This function is called to temporary store points for single "Single-Dog" and then sum up and show 'em to the Board UI.
-    /// </summary>
-    /// <param name="p"> Points of single "Single-Dog"</param>
-    // public void SumPoints(int p, int lv)
-    // {
-    //     singleCount += 1;
-    //     pSum += p;
-
-    //     if (singleCount == 需要触发的数量_Needed)
-    //     {
-    //         g.AddPoints(pSum);
-    //         g.ShowRing(lv);
-    //         Destroy(this.gameObject);
-    //     }
-    // }
-
-    #endregion
 
     //ASync Version SumPoints Short
     public void SumPoints(int p, int lv, int color)
@@ -109,10 +75,9 @@ public class Obstacle : MonoBehaviour
     {
         g.AddPoints(p);
         g.ShowRing(lv, color);
+        Debug.Log("SumLong");
     }
-    /// <summary>
-    /// Called when this whole obstacle hits the edge of FuncRange
-    /// </summary>
+
     public void Exit()
     {
         //This if statement is actually useless since we've destroyed this gameobject if we succeeded
@@ -123,4 +88,34 @@ public class Obstacle : MonoBehaviour
             Destroy(gameObject, 2);
         }
     }
+
+    public void SetProperty(float t, float v, int rot)
+    {
+        opTimeNext = t;
+        velocity = -v;
+        transform.eulerAngles += new Vector3(0, 0, rot);
+    }
+
+
+
+    #region SumPoints - Sync
+    /// <summary>
+    /// This function is called to temporary store points for single "Single-Dog" and then sum up and show 'em to the Board UI.
+    /// </summary>
+    /// <param name="p"> Points of single "Single-Dog"</param>
+    // public void SumPoints(int p, int lv)
+    // {
+    //     singleCount += 1;
+    //     pSum += p;
+
+    //     if (singleCount == 需要触发的数量_Needed)
+    //     {
+    //         g.AddPoints(pSum);
+    //         g.ShowRing(lv);
+    //         Destroy(this.gameObject);
+    //     }
+    // }
+
+    #endregion
+
 }

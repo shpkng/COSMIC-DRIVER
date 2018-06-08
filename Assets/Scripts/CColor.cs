@@ -15,6 +15,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CColor : MonoBehaviour {
-	public SingleDog.颜色_Color color;
+public class CColor : MonoBehaviour
+{
+    GameControl g;
+
+    public SingleDog.颜色_Color color;
+
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(other.name);
+        if (color.GetHashCode() == other.GetComponent<SingleDog>()._颜色_Color.GetHashCode())
+            other.GetComponent<SingleDog>()._in = true;
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        other.GetComponent<SingleDog>()._in = false;
+    }
+
 }

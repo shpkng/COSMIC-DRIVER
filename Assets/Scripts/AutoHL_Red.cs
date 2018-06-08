@@ -18,7 +18,7 @@ using UnityEngine;
 
 
 [RequireComponent(typeof(HighlightingSystem.Highlighter))]
-public class AutoHL_red : MonoBehaviour
+public class AutoHL_Red : MonoBehaviour
 {
     void Start()
     {
