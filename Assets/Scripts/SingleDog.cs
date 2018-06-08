@@ -19,6 +19,7 @@ using UnityEngine;
 //This Single-Dog script mainly takes care of the two parts of each one obstacle
 public class SingleDog : MonoBehaviour
 {
+    #region Variables
     public enum 颜色_Color
     {
         红色_Red,
@@ -31,11 +32,18 @@ public class SingleDog : MonoBehaviour
     [SerializeField] int good = 80;
     [SerializeField] int ok = 60;
 
-    [SerializeField] bool withMid = false;
-    [SerializeField] bool _in = false;
+    [SerializeField] int divisor = 50;
+
+    bool withMid = false;
+    bool _in = false;
+
+    [SerializeField] bool isLong = false;
 
     [SerializeField] 颜色_Color _颜色_Color;
 
+    #endregion
+
+    // To determine the points value
     void OnTriggerEnter(Collider other)
     {
 
@@ -49,18 +57,10 @@ public class SingleDog : MonoBehaviour
             _in = true;
         }
 
-        if (withMid && !_in) //整体在内
-        {
-            obstacle.SumPoints(perfect,2,_颜色_Color.GetHashCode());
-        }
-        else if (withMid && _in)
-        {
-            obstacle.SumPoints(good,1,_颜色_Color.GetHashCode());
-        }
-        else if (_in)
-        {
-            obstacle.SumPoints(ok,0,_颜色_Color.GetHashCode());
-        }
+
+        if (!isLong)
+            CheckOut();
+
     }
 
     void OnTriggerExit(Collider other)
@@ -72,6 +72,43 @@ public class SingleDog : MonoBehaviour
         if (other.tag == "Controller")
         {
             _in = false;
+        }
+    }
+
+    //我们把长Ob的计分放在了SingleDog脚本中
+    void FixedUpdate()
+    {
+        if (isLong)
+        {
+            if (withMid && !_in) //整体在内
+            {
+                obstacle.SumPoints(perfect / divisor, 2, _颜色_Color.GetHashCode());
+            }
+            else if (withMid && _in)
+            {
+                obstacle.SumPoints(good / divisor, 1, _颜色_Color.GetHashCode());
+            }
+            else if (_in)
+            {
+                obstacle.SumPoints(ok / divisor, 0, _颜色_Color.GetHashCode());
+            }
+        }
+    }
+
+    //结算分数
+    void CheckOut()
+    {
+        if (withMid && !_in) //整体在内
+        {
+            obstacle.SumPoints(perfect, 2, _颜色_Color.GetHashCode());
+        }
+        else if (withMid && _in)
+        {
+            obstacle.SumPoints(good, 1, _颜色_Color.GetHashCode());
+        }
+        else if (_in)
+        {
+            obstacle.SumPoints(ok, 0, _颜色_Color.GetHashCode());
         }
     }
 }

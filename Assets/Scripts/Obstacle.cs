@@ -10,14 +10,14 @@
  * loving the lovely sunshine in autumn.♥
  */
 
-
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
+
+    #region Variables
     private float opTimeNext;
     private float velocity;
 
@@ -38,6 +38,8 @@ public class Obstacle : MonoBehaviour
 
     //temporary points sum.
     private int pSum = 0;
+
+    #endregion
 
     void Start()
     {
@@ -63,6 +65,8 @@ public class Obstacle : MonoBehaviour
         transform.Translate(0, 0, velocity * Time.deltaTime);
     }
 
+
+    #region SumPoints - Sync
     /// <summary>
     /// This function is called to temporary store points for single "Single-Dog" and then sum up and show 'em to the Board UI.
     /// </summary>
@@ -80,38 +84,39 @@ public class Obstacle : MonoBehaviour
     //     }
     // }
 
+    #endregion
 
+    //ASync Version SumPoints Short
     public void SumPoints(int p, int lv, int color)
     {
-        if (isLong)
-        {
-			
-        }
-        else
-        {
-            singleCount += 1;
-            pSum += p;
+        singleCount += 1;
+        pSum += p;
 
-            //__________________
-            g.ShowRing(lv, color);
-            //__________________
+        //__________________
+        g.ShowRing(lv, color);
+        //__________________
 
-            if (singleCount == 需要触发的数量_Needed)
-            {
-                //__________________
-                g.AddPoints(pSum);
-                Destroy(this.gameObject);
-            }
+        if (singleCount == 需要触发的数量_Needed)
+        {
+            //__________________
+            g.AddPoints(pSum);
+            Destroy(this.gameObject);
         }
     }
 
+    // Sum points long
+    public void SumLong(int p, int lv, int color)
+    {
+        pSum += p;
+        g.ShowRing(lv, color);
+    }
     /// <summary>
     /// Called when this whole obstacle hits the edge of FuncRange
     /// </summary>
     public void Exit()
     {
         //This if statement is actually useless since we've destroyed this gameobject if we succeeded
-        if (singleCount != 2)
+        if (singleCount != 需要触发的数量_Needed && !isLong)    //没有击打到目标个数而且本Ob是短Ob
         {
             //Miss
             Debug.Log("You've Missed " + this.name);
