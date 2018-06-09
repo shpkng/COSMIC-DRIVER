@@ -33,5 +33,7 @@ public class InOut : MonoBehaviour
         {
             other.GetComponent<SingleDog>().obstacle.Exit();
         }
+
+        Debug.Log(other.name);
     }
 }

@@ -84,6 +84,7 @@ public class Obstacle : MonoBehaviour
         if (singleCount != 需要触发的数量_Needed && !isLong)    //没有击打到目标个数而且本Ob是短Ob
         {
             //Miss
+            g.ShowMiss();
             Debug.Log("You've Missed " + this.name);
             Destroy(gameObject, 2);
         }
