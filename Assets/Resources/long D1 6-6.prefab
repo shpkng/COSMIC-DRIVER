@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4412607828040236}
   - component: {fileID: 33139046548979078}
   - component: {fileID: 23001310945396446}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: long_D1_6_6:pCylinder26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4772805351837602}
   - component: {fileID: 33330219897163070}
   - component: {fileID: 23387580800375618}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: long_D1_6_6:pCylinder52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4236489001473318}
   - component: {fileID: 33071967498764064}
   - component: {fileID: 23945601060574264}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: long_D1_6_6:pCylinder51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4807283450379076}
   - component: {fileID: 114220013461576960}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: long D1 6-6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 64893396451751498}
   - component: {fileID: 54590497200198742}
   - component: {fileID: 114422960507955856}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: long_D1_6_6:pCylinder24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 64725231647682484}
   - component: {fileID: 54609741145198746}
   - component: {fileID: 114998975182706296}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: long_D1_6_6:pCylinder27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 4525861009051970}
   - component: {fileID: 33399284701570484}
   - component: {fileID: 23801243925983580}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: long_D1_6_6:pCylinder30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -567,6 +567,9 @@ MonoBehaviour:
   good: 80
   ok: 60
   divisor: 50
+  withMid: 0
+  _in: 0
+  unused: 1
   isLong: 1
   "_\u989C\u8272_Color": 0
 --- !u!114 &114998975182706296
@@ -585,5 +588,8 @@ MonoBehaviour:
   good: 80
   ok: 60
   divisor: 50
+  withMid: 0
+  _in: 0
+  unused: 1
   isLong: 1
   "_\u989C\u8272_Color": 1

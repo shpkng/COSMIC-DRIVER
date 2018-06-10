@@ -114,11 +114,11 @@ public class GameControl : MonoBehaviour
 
         if (color == 0)
         {
-            redDevice.TriggerHapticPulse(pulseTime);
+            // redDevice.TriggerHapticPulse(pulseTime);
         }
         else
         {
-            blueDevice.TriggerHapticPulse(pulseTime);
+    //            blueDevice.TriggerHapticPulse(pulseTime);
         }
     }
 

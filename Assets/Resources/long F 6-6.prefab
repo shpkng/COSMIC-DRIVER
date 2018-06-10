@@ -21,7 +21,10 @@ GameObject:
   - component: {fileID: 4885602445363318}
   - component: {fileID: 33357955252087088}
   - component: {fileID: 23629484045099868}
-  m_Layer: 0
+  - component: {fileID: 54824596881861368}
+  - component: {fileID: 64011864585064448}
+  - component: {fileID: 114218772437322600}
+  m_Layer: 5
   m_Name: pCylinder2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,10 +41,7 @@ GameObject:
   - component: {fileID: 4191392404743158}
   - component: {fileID: 33687627678770300}
   - component: {fileID: 23036230553666444}
-  - component: {fileID: 64764870702094288}
-  - component: {fileID: 54491713721422216}
-  - component: {fileID: 114623781325328194}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 4841026657022522}
   - component: {fileID: 33634637296135086}
   - component: {fileID: 23348474500156104}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: long_F:pCylinder53
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 4682489264570404}
   - component: {fileID: 33557542510315984}
   - component: {fileID: 23283462564110968}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: long_F:pCylinder52
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,10 @@ GameObject:
   - component: {fileID: 4466820443802918}
   - component: {fileID: 33378999397828740}
   - component: {fileID: 23708135470735620}
-  m_Layer: 0
+  - component: {fileID: 54970498074876722}
+  - component: {fileID: 64251051283295416}
+  - component: {fileID: 114173869241549640}
+  m_Layer: 5
   m_Name: pCylinder3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,10 +112,7 @@ GameObject:
   - component: {fileID: 4603809365656370}
   - component: {fileID: 33769372304733032}
   - component: {fileID: 23241182826320894}
-  - component: {fileID: 64481172583251572}
-  - component: {fileID: 54213107134262586}
-  - component: {fileID: 114607142276208938}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4788418239919644}
   - component: {fileID: 114090347620707996}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: long F 6-6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,12 +478,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1676008533518566}
   m_Mesh: {fileID: 4300010, guid: da358aa8a5225b248bb3500176beb471, type: 3}
---- !u!54 &54213107134262586
+--- !u!54 &54824596881861368
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1676008533518566}
+  m_GameObject: {fileID: 1141294404809334}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -493,12 +493,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!54 &54491713721422216
+--- !u!54 &54970498074876722
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1227266597792818}
+  m_GameObject: {fileID: 1586612356574504}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -508,34 +508,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64481172583251572
+--- !u!64 &64011864585064448
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1676008533518566}
+  m_GameObject: {fileID: 1141294404809334}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300010, guid: da358aa8a5225b248bb3500176beb471, type: 3}
---- !u!64 &64764870702094288
+  m_Mesh: {fileID: 4300006, guid: da358aa8a5225b248bb3500176beb471, type: 3}
+--- !u!64 &64251051283295416
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1227266597792818}
+  m_GameObject: {fileID: 1586612356574504}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300004, guid: da358aa8a5225b248bb3500176beb471, type: 3}
+  m_Mesh: {fileID: 4300008, guid: da358aa8a5225b248bb3500176beb471, type: 3}
 --- !u!114 &114090347620707996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -549,14 +549,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   "\u9700\u8981\u89E6\u53D1\u7684\u6570\u91CF_Needed": 2
   isLong: 1
-  red: {fileID: 114623781325328194}
-  blue: {fileID: 114607142276208938}
---- !u!114 &114607142276208938
+  red: {fileID: 114218772437322600}
+  blue: {fileID: 114173869241549640}
+--- !u!114 &114173869241549640
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1676008533518566}
+  m_GameObject: {fileID: 1586612356574504}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
@@ -567,14 +567,17 @@ MonoBehaviour:
   good: 80
   ok: 60
   divisor: 50
+  withMid: 0
+  _in: 0
+  unused: 1
   isLong: 1
   "_\u989C\u8272_Color": 1
---- !u!114 &114623781325328194
+--- !u!114 &114218772437322600
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1227266597792818}
+  m_GameObject: {fileID: 1141294404809334}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
@@ -585,5 +588,8 @@ MonoBehaviour:
   good: 80
   ok: 60
   divisor: 50
+  withMid: 0
+  _in: 0
+  unused: 1
   isLong: 1
   "_\u989C\u8272_Color": 0

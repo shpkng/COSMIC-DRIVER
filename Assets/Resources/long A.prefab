@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4160663857383284}
   - component: {fileID: 33140770447316506}
   - component: {fileID: 23298138847052194}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder48
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4753337128556738}
   - component: {fileID: 33496013997942738}
   - component: {fileID: 23271717707574046}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder46
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 64420437048695282}
   - component: {fileID: 54748162098755162}
   - component: {fileID: 114022505837374856}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ GameObject:
   - component: {fileID: 4217013400139358}
   - component: {fileID: 114574544008963284}
   - component: {fileID: 114474564566746430}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: long A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 4309631545042608}
   - component: {fileID: 33831143032666066}
   - component: {fileID: 23398339072087888}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder47
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +109,7 @@ GameObject:
   - component: {fileID: 4994057929268054}
   - component: {fileID: 33073312664399448}
   - component: {fileID: 23704720664277350}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder43
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 64200714044485258}
   - component: {fileID: 54351925760013950}
   - component: {fileID: 114380820443600632}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder44
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -516,8 +516,8 @@ MeshCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1855880204630238}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
@@ -530,8 +530,8 @@ MeshCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1484128381801312}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
@@ -553,6 +553,9 @@ MonoBehaviour:
   good: 80
   ok: 60
   divisor: 50
+  withMid: 0
+  _in: 0
+  unused: 1
   isLong: 1
   "_\u989C\u8272_Color": 1
 --- !u!114 &114380820443600632
@@ -571,6 +574,9 @@ MonoBehaviour:
   good: 80
   ok: 60
   divisor: 50
+  withMid: 0
+  _in: 0
+  unused: 1
   isLong: 1
   "_\u989C\u8272_Color": 0
 --- !u!114 &114474564566746430

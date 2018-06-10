@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 64043051661808854}
   - component: {fileID: 54560730654028414}
   - component: {fileID: 114335892560710408}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 4950968661094194}
   - component: {fileID: 33107769770132634}
   - component: {fileID: 23494298074074430}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   - component: {fileID: 64100528116624502}
   - component: {fileID: 54664861769469954}
   - component: {fileID: 114575864902920202}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,9 +76,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4748635765109882}
-  - component: {fileID: 114993238111970836}
   - component: {fileID: 114339481899954714}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: long E2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +94,7 @@ GameObject:
   - component: {fileID: 4648179044547148}
   - component: {fileID: 33129015833835668}
   - component: {fileID: 23283275748513700}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,10 +111,7 @@ GameObject:
   - component: {fileID: 4354264530441220}
   - component: {fileID: 33120444375101714}
   - component: {fileID: 23776239806717794}
-  - component: {fileID: 64050250880555176}
-  - component: {fileID: 54879601694006642}
-  - component: {fileID: 114381735334616266}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +128,7 @@ GameObject:
   - component: {fileID: 4561935808330884}
   - component: {fileID: 33454490329812276}
   - component: {fileID: 23767161850563366}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +145,10 @@ GameObject:
   - component: {fileID: 4371368792442994}
   - component: {fileID: 33826861981218524}
   - component: {fileID: 23259886377438978}
-  m_Layer: 0
+  - component: {fileID: 114540136992154418}
+  - component: {fileID: 54891473844478906}
+  - component: {fileID: 64304276192214622}
+  m_Layer: 5
   m_Name: pCylinder29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -584,12 +583,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!54 &54879601694006642
+--- !u!54 &54891473844478906
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1655598348942102}
+  m_GameObject: {fileID: 1955038667074814}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -613,20 +612,6 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300006, guid: b2f1debe6bca6f64b9f7f058ab788ee3, type: 3}
---- !u!64 &64050250880555176
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1655598348942102}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Convex: 1
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300012, guid: b2f1debe6bca6f64b9f7f058ab788ee3, type: 3}
 --- !u!64 &64100528116624502
 MeshCollider:
   m_ObjectHideFlags: 1
@@ -634,13 +619,27 @@ MeshCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1368026641037222}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300008, guid: b2f1debe6bca6f64b9f7f058ab788ee3, type: 3}
+--- !u!64 &64304276192214622
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1955038667074814}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300010, guid: b2f1debe6bca6f64b9f7f058ab788ee3, type: 3}
 --- !u!114 &114335892560710408
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -657,6 +656,9 @@ MonoBehaviour:
   good: 80
   ok: 60
   divisor: 50
+  withMid: 0
+  _in: 0
+  unused: 1
   isLong: 0
   "_\u989C\u8272_Color": 1
 --- !u!114 &114339481899954714
@@ -672,14 +674,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   "\u9700\u8981\u89E6\u53D1\u7684\u6570\u91CF_Needed": 2
   isLong: 1
-  red: {fileID: 114381735334616266}
+  red: {fileID: 114540136992154418}
   blue: {fileID: 114335892560710408}
---- !u!114 &114381735334616266
+--- !u!114 &114540136992154418
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1655598348942102}
+  m_GameObject: {fileID: 1955038667074814}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
@@ -690,6 +692,9 @@ MonoBehaviour:
   good: 80
   ok: 60
   divisor: 50
+  withMid: 0
+  _in: 0
+  unused: 1
   isLong: 1
   "_\u989C\u8272_Color": 0
 --- !u!114 &114575864902920202
@@ -703,23 +708,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 0}
+  obstacle: {fileID: 114339481899954714}
   perfect: 100
   good: 80
   ok: 60
   divisor: 50
+  withMid: 0
+  _in: 0
+  unused: 1
   isLong: 1
-  "_\u989C\u8272_Color": 0
---- !u!114 &114993238111970836
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1470117044502244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c08f4bbaff71fa4f80d9d752626fdbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  red: {fileID: 114381735334616266}
-  blue: {fileID: 114335892560710408}
+  "_\u989C\u8272_Color": 1

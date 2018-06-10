@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4666964205361188}
   - component: {fileID: 33497817425147080}
   - component: {fileID: 23743600918988528}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4977634380955764}
   - component: {fileID: 33528563517976272}
   - component: {fileID: 23307042044467338}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: long_A__2:pCylinder18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4193275825648718}
   - component: {fileID: 33743021400261204}
   - component: {fileID: 23976721298958394}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 4199623535169812}
   - component: {fileID: 33628578147058900}
   - component: {fileID: 23709345193396662}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,9 +87,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4142789503097124}
-  - component: {fileID: 114138049727033058}
   - component: {fileID: 114305686669173294}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: long D2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -109,7 +108,7 @@ GameObject:
   - component: {fileID: 64804594978052792}
   - component: {fileID: 54832130530306052}
   - component: {fileID: 114475970204941550}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: long_A__2:pCylinder26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +125,7 @@ GameObject:
   - component: {fileID: 4467797040332062}
   - component: {fileID: 33214834030161104}
   - component: {fileID: 23587741030146244}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: long_A__2:pCylinder27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,7 +142,7 @@ GameObject:
   - component: {fileID: 4457190585027230}
   - component: {fileID: 33162589750009988}
   - component: {fileID: 23807861444447652}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: long_A__2:pCylinder24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,7 +162,7 @@ GameObject:
   - component: {fileID: 64650647083124462}
   - component: {fileID: 54460443069475394}
   - component: {fileID: 114407931860053116}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: long_A__2:pCylinder28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +179,7 @@ GameObject:
   - component: {fileID: 4170219388263364}
   - component: {fileID: 33448581783476572}
   - component: {fileID: 23352101443877788}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: long_A__2:pCylinder19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -197,7 +196,7 @@ GameObject:
   - component: {fileID: 4380778040306138}
   - component: {fileID: 33356893909718600}
   - component: {fileID: 23844113198391186}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: long_A__2:pCylinder17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -804,10 +803,10 @@ MeshCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1546584182295758}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300012, guid: 666ded13663744943b0859482d61cf58, type: 3}
@@ -818,26 +817,13 @@ MeshCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1376599301315482}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300008, guid: 666ded13663744943b0859482d61cf58, type: 3}
---- !u!114 &114138049727033058
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1283001746384328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c08f4bbaff71fa4f80d9d752626fdbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  red: {fileID: 114407931860053116}
-  blue: {fileID: 114475970204941550}
 --- !u!114 &114305686669173294
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -869,6 +855,9 @@ MonoBehaviour:
   good: 80
   ok: 60
   divisor: 50
+  withMid: 0
+  _in: 0
+  unused: 1
   isLong: 1
   "_\u989C\u8272_Color": 0
 --- !u!114 &114475970204941550
@@ -887,5 +876,8 @@ MonoBehaviour:
   good: 80
   ok: 60
   divisor: 50
+  withMid: 0
+  _in: 0
+  unused: 1
   isLong: 1
   "_\u989C\u8272_Color": 1

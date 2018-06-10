@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4373117085214534}
   - component: {fileID: 33651682139786166}
   - component: {fileID: 23467332209685312}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4309748899142588}
   - component: {fileID: 33291807202674350}
   - component: {fileID: 23155342461960446}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,8 +58,7 @@ GameObject:
   - component: {fileID: 64640107176863314}
   - component: {fileID: 54593649213966944}
   - component: {fileID: 114040813321855260}
-  - component: {fileID: 114355801080260180}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +75,7 @@ GameObject:
   - component: {fileID: 4176490900716084}
   - component: {fileID: 33042761689666994}
   - component: {fileID: 23982975555961302}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,8 +95,7 @@ GameObject:
   - component: {fileID: 64638789025384558}
   - component: {fileID: 54440090864822166}
   - component: {fileID: 114640168880240232}
-  - component: {fileID: 114927544640479986}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4368336642983334}
   - component: {fileID: 114459162228504830}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: bigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -130,7 +128,7 @@ GameObject:
   - component: {fileID: 4962012271762364}
   - component: {fileID: 33483573917343510}
   - component: {fileID: 23493445380705818}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +145,7 @@ GameObject:
   - component: {fileID: 4447798059172480}
   - component: {fileID: 33949500860980364}
   - component: {fileID: 23232780345963278}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -589,8 +587,8 @@ MeshCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1654057807608836}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
@@ -603,8 +601,8 @@ MeshCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1599645713125024}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
+  m_IsTrigger: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
@@ -621,7 +619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 0}
+  obstacle: {fileID: 114459162228504830}
   perfect: 100
   good: 80
   ok: 60
@@ -631,21 +629,6 @@ MonoBehaviour:
   unused: 1
   isLong: 0
   "_\u989C\u8272_Color": 0
---- !u!114 &114355801080260180
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1599645713125024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8889583ac83666f49b39e0476a22ad01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  "\u9700\u8981\u89E6\u53D1\u7684\u6570\u91CF_Needed": 2
-  isLong: 0
-  red: {fileID: 0}
-  blue: {fileID: 0}
 --- !u!114 &114459162228504830
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -672,7 +655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d2877b182483e04bbb018262e3794ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 0}
+  obstacle: {fileID: 114459162228504830}
   perfect: 100
   good: 80
   ok: 60
@@ -682,18 +665,3 @@ MonoBehaviour:
   unused: 1
   isLong: 0
   "_\u989C\u8272_Color": 1
---- !u!114 &114927544640479986
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1654057807608836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8889583ac83666f49b39e0476a22ad01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  "\u9700\u8981\u89E6\u53D1\u7684\u6570\u91CF_Needed": 2
-  isLong: 0
-  red: {fileID: 0}
-  blue: {fileID: 0}
