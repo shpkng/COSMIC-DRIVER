@@ -20,6 +20,14 @@ public class GameControl : MonoBehaviour
 {
 
     [SerializeField] UnityEngine.UI.Text point;
+
+    [SerializeField] SteamVR_TrackedObject redHand;
+    [SerializeField] SteamVR_TrackedObject blueHand;
+    [SerializeField] ushort pulseTime;
+
+    SteamVR_Controller.Device redDevice;
+    SteamVR_Controller.Device blueDevice;
+
     [SerializeField] GameObject red;
     [SerializeField] GameObject blue;
 
@@ -27,12 +35,19 @@ public class GameControl : MonoBehaviour
 
 
     [SerializeField] SpriteRenderer MissSprite;
-    [SerializeField] float Miss效果停留时间 = 0.01f;
+
+    [SerializeField] GameObject ringWithRings;
+    [SerializeField] float alphaStep = 0.01f;
+
     int pointCache = 0;
+
     // Use this for initialization
     void Start()
     {
         point.text = "00000000";
+        redDevice = SteamVR_Controller.Input((int)redHand.index);
+        blueDevice = SteamVR_Controller.Input((int)blueHand.index);
+
     }
 
     public void AddPoints(int s)
@@ -43,6 +58,7 @@ public class GameControl : MonoBehaviour
 
     public void ShowRing(int lv, int color)    //0-2 OK - Perfect
     {
+        // Ring near controller
         switch (lv)
         {
             case 0:
@@ -51,6 +67,7 @@ public class GameControl : MonoBehaviour
                     {
                         red.transform.localScale = new Vector3(0.15f, 0.15f, 0.15f);
                         red.SetActive(true);
+
                     }
                     else
                     {
@@ -90,6 +107,17 @@ public class GameControl : MonoBehaviour
 
         StartCoroutine(Hide(圆环停留时间, color));
 
+        GameObject temp = Instantiate(ringWithRings);
+        temp.transform.eulerAngles = new Vector3(0, 0, Random.Range(0, 3) * 10);
+
+        if(color==0)
+        {
+            redDevice.TriggerHapticPulse(pulseTime);
+        }
+        else
+        {
+            blueDevice.TriggerHapticPulse(pulseTime);
+        }
     }
 
     public void ShowMiss()
@@ -100,7 +128,7 @@ public class GameControl : MonoBehaviour
 
     void Update()
     {
-       MissSprite.color = new Vector4(MissSprite.color.r, MissSprite.color.g, MissSprite.color.b, MissSprite.color.a - Miss效果停留时间);
+        MissSprite.color = new Vector4(MissSprite.color.r, MissSprite.color.g, MissSprite.color.b, MissSprite.color.a - alphaStep);
     }
 
     IEnumerator Hide(float t, int color)
