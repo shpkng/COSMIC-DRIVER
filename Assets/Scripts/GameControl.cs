@@ -45,8 +45,11 @@ public class GameControl : MonoBehaviour
     void Start()
     {
         point.text = "00000000";
-        redDevice = SteamVR_Controller.Input((int)redHand.index);
-        blueDevice = SteamVR_Controller.Input((int)blueHand.index);
+        if (redHand && blueHand)
+        {
+            // redDevice = SteamVR_Controller.Input((int)redHand.index);
+            // blueDevice = SteamVR_Controller.Input((int)blueHand.index);
+        }
 
     }
 
@@ -107,10 +110,9 @@ public class GameControl : MonoBehaviour
 
         StartCoroutine(Hide(圆环停留时间, color));
 
-        GameObject temp = Instantiate(ringWithRings);
-        temp.transform.eulerAngles = new Vector3(0, 0, Random.Range(0, 3) * 10);
+        ShowRingWithRings();
 
-        if(color==0)
+        if (color == 0)
         {
             redDevice.TriggerHapticPulse(pulseTime);
         }
@@ -141,6 +143,14 @@ public class GameControl : MonoBehaviour
         else
             blue.SetActive(false);
     }
+
+    void ShowRingWithRings()
+    {
+        GameObject temp = Instantiate(ringWithRings);
+        temp.transform.eulerAngles = new Vector3(0, 0, Random.Range(0, 3) * 10);
+    }
+
+
 
     #region 
     //同时出现的版本

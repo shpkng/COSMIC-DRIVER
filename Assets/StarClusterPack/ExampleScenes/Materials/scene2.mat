@@ -6,21 +6,24 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: blue
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _EMISSION
-  m_LightmapFlags: 1
+  m_Name: scene2
+  m_Shader: {fileID: 4800000, guid: 11ddb99c595e44545824258a586fe00d, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
-  stringTagMap:
-    RenderType: Transparent
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Color:
+        m_Texture: {fileID: 2800000, guid: 47bd68179a1cfdc4f93e7149ba29b343, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -39,8 +42,12 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _LensEffect:
+        m_Texture: {fileID: 2800000, guid: c0e8ff92d5e2c944daac4d5af3623ad0, type: 3}
+        m_Scale: {x: 0.1, y: 0.1}
+        m_Offset: {x: 2, y: 2}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: fccf9cd158aa49f409e4a9af83fd147a, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -55,23 +62,43 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Shape:
+        m_Texture: {fileID: 2800000, guid: 511ca6024580b444f99ad9f5b3f9f056, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Size:
+        m_Texture: {fileID: 2800000, guid: b21874636eac8bc4faaf118956986edb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _Attenuation_Exponent: 0.8
+    - _Attenuation_Strength: 1
     - _BumpScale: 1
+    - _Color_Multiplier: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _DstBlend: 10
+    - _DstBlend: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
+    - _LensEffect_Distance: 1
+    - _LensEffect_DistanceExponent: 3
     - _Metallic: 0
-    - _Mode: 3
+    - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _Size_Multiplier: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _ZWrite: 0
+    - _Use_Attenuation: 0
+    - _Use_Camera_Position: 0
+    - _Use_LensEffect: 0
+    - _Variation_Shift: 0
+    - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 0.67058825}
-    - _EmissionColor: {r: 0.18039216, g: 0.32156864, b: 0.9254902, a: 1}
+    - _Camera_Position: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color_Tint: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
